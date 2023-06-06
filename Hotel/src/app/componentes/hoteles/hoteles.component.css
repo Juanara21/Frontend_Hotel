@@ -1,0 +1,35 @@
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.nit {
+  font-weight: bold;
+}
+
+.categoria {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.nombre {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.direccion {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.anio {
+  margin-top: 5px;
+  font-size: 12px;
+}

@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    
+    
+     
+   }
+   /* Estilo del contenedor principal */
+   .hotel-form {
+     display: flex;
+     padding-top: 20px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     width: 45%;
+     height: 100%;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0px 0px 10px #bbb;
+     padding: 40px;
+     color: #000000;
+     flex-direction: column;
+     
+     
+   }
+   
+   /* Estilo del encabezado */
+   h1 {
+     
+     color: #000000;
+     font-size: 2rem;
+     text-align: center;
+     margin-bottom: 20px;
+     
+   }
+   
+   /* Estilo de los campos de formulario */
+   form input[type="text"],
+   form input[type="tel"],
+   form input[type="number"],
+   form select {
+     padding: 10px;
+     border-radius: 5px;
+     border: none;
+     width: 100%;
+     margin-bottom: 10px;
+     box-shadow: 0px 0px 5px #ccc;
+     color: #7c7c7c;
+   }
+   
+   form textarea{
+     width: 100%;
+     box-shadow: 0px 0px 5px #ccc;
+     color: #7c7c7c;
+     
+   }
+   /* Estilo de los botones de formulario */
+   form button {
+     padding: 10px 20px;
+     border: none;
+     background-color: #0077c2;
+     color: white;
+     border-radius: 5px;
+     cursor: pointer;
+   }
+   
+   /* Estilo de los botones de formulario al pasar el cursor */
+   form button:hover {
+     background-color: #005ea3;
+   }
+   

@@ -1,0 +1,19 @@
+<div class="container d-flex justify-content-center">
+    <div class="card m-2" style="width: 18rem;"  *ngFor="let hotel of hoteles">
+        <img  src="assets/img/titulo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">{{ hotel.Nombre }}</h1>
+          <p class="card-text">Descripcion: {{ hotel.Categorium.DescripcionCategoria }}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Nit: {{ hotel.NIT }}</li>
+          <li class="list-group-item">Direccion: {{ hotel.Direccion }}</li>
+          <li class="list-group-item">Nivel: {{ hotel.NivelCat }}</li>
+          <li class="list-group-item">Año de construccion: {{ hotel.AnioConstruccion }}</li>
+          <li class="list-group-item"><button type="button" class="btn btn-primary btn-sm d-flex align-center" routerLink="/dashboard/reservas">Reservar</button></li>
+        </ul>
+      
+      </div>
+</div>
+    
+  
