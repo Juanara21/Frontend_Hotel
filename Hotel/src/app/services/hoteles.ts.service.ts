@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+// import { ReservaI } from '../interfaces/reservas'
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,7 @@ export class HotelesTsService {
     return this.http.get(url);
   }
 
+  
   createHotel(hotel: any): Observable<any> {
     const url = `${this.apiUrl}/hoteles`;
     return this.http.post(url, hotel);
@@ -37,4 +39,9 @@ export class HotelesTsService {
     const url = `${this.apiUrl}/hoteles/${id}`;
     return this.http.delete(url);
   }
+  getReservas(): Observable<any> {
+    const url = `${this.apiUrl}/reserva`;
+    return this.http.get(url);
+  }
+  
 }

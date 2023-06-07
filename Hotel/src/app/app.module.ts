@@ -24,6 +24,8 @@ import { RegistrarComponent } from './componentes/registrar/registrar.component'
 import { RegistrarHotelComponent } from './componentes/registrar-hotel/registrar-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { ReservaTableComponent } from './componentes/reserva-table/reserva-table.component';
+
 const appRoutes: Routes = [
  
     { path:'', redirectTo: 'dashboard', pathMatch: 'full'},
@@ -35,6 +37,7 @@ const appRoutes: Routes = [
       { path:'registrar',component:RegistrarComponent},
       { path:'registrarHotel',component:RegistrarHotelComponent},
       { path:'reservas',component:ReservasComponent},
+      { path:'reservatable',component:ReservaTableComponent},
       
    ]},
   // { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
@@ -51,7 +54,8 @@ const appRoutes: Routes = [
     HotelesComponent,
     ReservasComponent,
     RegistrarComponent,
-    RegistrarHotelComponent
+    RegistrarHotelComponent,
+    ReservaTableComponent
   ],
   imports: [
     BrowserModule,

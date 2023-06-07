@@ -5,7 +5,11 @@ export interface ReservaI {
     Fecha_ingreso: Date;
     Fecha_salida: Date;
     Hora_ingreso: string;
-
+    activo:boolean;
+    Hotele: 
+          {
+            nombre: string
+          };
   }
   
   export class Reserva implements ReservaI {
@@ -16,6 +20,8 @@ export interface ReservaI {
       public Fecha_ingreso: Date,
       public Fecha_salida: Date,
       public Hora_ingreso: string,
+      public activo:boolean,
+      public Hotele: {nombre: string}
     
     ) {}
   }
